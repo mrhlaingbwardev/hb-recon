@@ -1,7 +1,5 @@
 # HB-Recon
 
-[![PyPI version](https://badge.fury.io/py/hb-recon.svg)](https://pypi.org/project/hb-recon/)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/hb-recon)](https://pypi.org/project/hb-recon/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/mrhlaingbwardev/hb-recon?style=social)](https://github.com/mrhlaingbwardev/hb-recon/stargazers)
@@ -83,24 +81,14 @@ whatweb --version
 
 ## Installation
 
-### Option 1: PyPI (Recommended)
+### Option 1: Docker (Recommended for Windows)
 
-**On Kali/Debian/Ubuntu:**
 ```bash
-pip install --break-system-packages hb-recon
+docker build -t hb-recon .
+docker run -it hb-recon -h
 ```
 
-**On other systems:**
-```bash
-pip install hb-recon
-```
-
-**Or use pipx (recommended for isolated environments):**
-```bash
-pipx install hb-recon
-```
-
-### Option 2: From Source
+### Option 2: From Source (Linux/WSL)
 
 ```bash
 git clone https://github.com/mrhlaingbwardev/hb-recon.git
@@ -228,8 +216,10 @@ Input: Domain
 ## Example Workflow
 
 ```bash
-# 1. Install hb-recon
-pip install hb-recon
+# 1. Install hb-recon (from source)
+git clone https://github.com/mrhlaingbwardev/hb-recon.git
+cd hb-recon
+pip install -e .
 
 # 2. Run scan
 python -m hb_recon
@@ -323,8 +313,7 @@ MIT License - See [LICENSE](LICENSE)
 
 **Hlaing Bwar**  
 - GitHub: [@mrhlaingbwardev](https://github.com/mrhlaingbwardev)
-- Website: [hlaingbwar.com](https://www.hlaingbwar.com)
-- PyPI: [hb-recon](https://pypi.org/project/hb-recon/)
+- Website: [hlaingbwar.me](https://www.hlaingbwar.me)
 
 ---
 
